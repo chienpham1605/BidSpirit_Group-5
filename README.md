@@ -11,6 +11,6 @@ Bid Spirit
 =======================================
 Documentations : https://github.com/L3nhan/doodle_group01/tree/main/Documentations
 =======================================
-Published website : https://l3nhan.github.io/doodle_group01/
+Published website : https://chienpham1605.github.io/BidSpirit_Group-5/
 =======================================
 Thank you for visit our website.
