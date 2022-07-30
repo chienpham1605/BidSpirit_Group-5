@@ -13,4 +13,4 @@ Documentations : https://github.com/L3nhan/doodle_group01/tree/main/Documentatio
 =======================================
 Published website : https://l3nhan.github.io/doodle_group01/
 =======================================
-Thank you for visit our website.![image](https://user-images.githubusercontent.com/107631195/181909824-1c4c746f-a68f-4308-ab5f-45a73bf2b002.png)
+Thank you for visit our website.
