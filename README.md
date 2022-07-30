@@ -9,7 +9,7 @@ Bid Spirit
 	2. Phan Nguyễn Hưng	(Student0000002)
 	3. Võ Duy Huynh	(Student0000003)	
 =======================================
-Documentations : https://github.com/L3nhan/doodle_group01/tree/main/Documentations
+Documentations :https://github.com/chienpham1605/BidSpirit_Group-5/tree/main/Documentations
 =======================================
 Published website : https://chienpham1605.github.io/BidSpirit_Group-5/
 =======================================
