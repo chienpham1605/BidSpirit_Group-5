@@ -12,7 +12,9 @@
 =======================================
 Documentations :https://github.com/chienpham1605/BidSpirit_Group-5/tree/main/Documentations
 =======================================
-Published website : https://chienpham1605.github.io/BidSpirit_Group-5/
+Published website : https://l3nhan.github.io/doodle_group01/
+
+
 	
 =======================================
 Thank you for visit our website.
