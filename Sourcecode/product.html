@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="countdown.js"></script>
+    <script src="ctrller.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <title>Product</title>
+</head>
+
+<body>
+    <header>
+        <div class="inner-header container">
+            <a href=""><img class="logo" src="image/icon.webp"></a>
+            <nav>
+                <ul id="main-menu">
+                    <form action="" id="search-box">
+                        <input type="text" id="search-text">
+                        <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                    <li><a href="#!products">Products</a>
+                        <ul class="dropdown">
+                            <a href="">Fine Art</a>
+                            <a href="">Antiques</a>
+                            <a href="">Furniture</a>
+                            <a href="">Collectibles</a>
+                        </ul>
+                    </li>
+                    <li><a href="#!auctions">Auctions</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Gallery</a></li>
+                     <li><a href="">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+    </header>
+    <div class="banner">
+    </div>
+        <div class="container">
+            <div class="section-header cl-white mw-100 left-style">
+                <h3>Product List</h3>
+            </div>
+            <div class="product-auction padding-bottom">
+                <div class="container">
+                    <div class="row mb--50">
+                        <div class="col-lg-4 mb-50">
+                            <div class="widget">
+                                <h5 class="title">Filter by Price</h5>
+                                <div class="widget-body">
+                                    <div id="slider-range"></div>
+                                    <div class="price-range">
+                                        <label for="amount">Price :</label>
+                                        <input type="text" id="amount">
+                                    </div>
+                                </div>
+                                <div class="text-center mt-20">
+                                    <a href="#0" class="custom-button">Filter</a>
+                                </div>
+                            </div>
+                            <div class="widget" id="btnWidget">
+                                <h5 class="title">Product Type</h5>
+                                <div class="widget-body">
+                                    <div class="widget-form-group" >
+                                        <button class="btn active" onclick="filterSelection('all')">All</button>
+                                    </div>
+                                    <div class="widget-form-group" >
+                                        <button class="btn" onclick="filterSelection('furniture')">Furnitures</button>
+                                    </div>
+                                    <div class="widget-form-group" >
+                                        <button class="btn" onclick="filterSelection('collectibles')">Collectibles</button>
+                                    </div>
+                                    <div class="widget-form-group" >
+                                        <button class="btn" onclick="filterSelection('antiques')">Antiques</button>
+                                    </div>
+                                    <div class="widget-form-group" >
+                                        <button class="btn" onclick="filterSelection('art')">Fine Art</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget">
+                                <h5 class="title">Ending Within</h5>
+                                <div class="widget-body">
+                                    <div class="widget-form-group">
+                                        <input type="checkbox" name="check-by-type" id="day">
+                                        <label for="day">1 Day</label>
+                                    </div>
+                                    <div class="widget-form-group">
+                                        <input type="checkbox" name="check-by-type" id="week">
+                                        <label for="week">1 Week</label>
+                                    </div>
+                                    <div class="widget-form-group">
+                                        <input type="checkbox" name="check-by-type" id="month1">
+                                        <label for="month1">1 Month</label>
+                                    </div>
+                                    <div class="widget-form-group">
+                                        <input type="checkbox" name="check-by-type" id="month3">
+                                        <label for="month3">3 Month</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 mb-50" id="">
+                            <div class="product-header mb-40 style-2">
+                                <form class="product-search ml-auto">
+                                    <input type="text" placeholder="Item Name">
+                                </form>
+                            </div>
+                            <div class="row mb-30-none justify-content-center">
+                                <div class="col-sm-10 col-md-6 col-lg-4 art">
+                                    <div class="auction-item-2">
+                                        <div class="auction-thumb">
+                                            <a href="Bách Tuấn Đồ.html"><img
+                                            src="../hình sản phẩm/Bách tuấn đồ.jpg"></a>
+                                            <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                            <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                        </div>
+                                        <div class="auction-content">
+                                            <h6 class="title">
+                                                <a href="#0">Bach Tuan Do</a>
+                                            </h6>
+                                            <div class="bid-area">
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-auction"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Current Bid</div>
+                                                        <div class="amount">$450</div>
+                                                    </div>
+                                                </div>
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-money"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Buy Now</div>
+                                                        <div class="amount">$500</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="countdown-area">
+                                                <div class="countdown">
+                                                    <div id="bid_counter"></div>
+                                                </div>
+                                                <span class="total-bids">4 Bids</span>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="" class="custom-button">Submit a bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-10 col-md-6 col-lg-4 furniture">
+                                    <div class="auction-item-2">
+                                        <div class="auction-thumb">
+                                            <a href="Chiếc bát men trắng.html"><img
+                                                    src="../hình sản phẩm/Chiếc bát men trắng 1.jpg"></a>
+                                            <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                            <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                        </div>
+                                        <div class="auction-content">
+                                            <h6 class="title">
+                                                <a href="#0">White Bowl </a>
+                                            </h6>
+                                            <div class="bid-area">
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-auction"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Current Bid</div>
+                                                        <div class="amount">$300</div>
+                                                    </div>
+                                                </div>
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-money"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Buy Now</div>
+                                                        <div class="amount">$500</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="countdown-area">
+                                                <div class="countdown">
+                                                    <div id="bid_counter"></div>
+                                                </div>
+                                                <span class="total-bids">6 Bids</span>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#0" class="custom-button">Submit a bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-10 col-md-6 col-lg-4 collectibles">
+                                    <div class="auction-item-2">
+                                        <div class="auction-thumb">
+                                            <a href="chiếc bình cổ.html"><img
+                                                    src="../hình sản phẩm/chiếc bình cổ.jpg"></a>
+                                            <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                            <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                        </div>
+                                        <div class="auction-content">
+                                            <h6 class="title">
+                                                <a href="#0"> Old Vase</a>
+                                            </h6>
+                                            <div class="bid-area">
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-auction"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Current Bid</div>
+                                                        <div class="amount">$450</div>
+                                                    </div>
+                                                </div>
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-money"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Buy Now</div>
+                                                        <div class="amount">$1000</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="countdown-area">
+                                                <div class="countdown">
+                                                    <div id="bid_counter"></div>
+                                                </div>
+                                                <span class="total-bids">30 Bids</span>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#0" class="custom-button">Submit a bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-10 col-md-6 col-lg-4 antiques">
+                                    <div class="auction-item-2">
+                                        <div class="auction-thumb">
+                                            <a href="Chiếc vương miện Tiara.html"><img
+                                                    src="../hình sản phẩm/Chiếc vương miện Tiara 2.jpg"></a>
+                                            <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                            <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                        </div>
+                                        <div class="auction-content">
+                                            <h6 class="title">
+                                                <a href="#0">Chiếc vương miện Tiara</a>
+                                            </h6>
+                                            <div class="bid-area">
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-auction"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Current Bid</div>
+                                                        <div class="amount">$876.00</div>
+                                                    </div>
+                                                </div>
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-money"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Buy Now</div>
+                                                        <div class="amount">$5,00.00</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="countdown-area">
+                                                <div class="countdown">
+                                                    <div id="bid_counter"></div>
+                                                </div>
+                                                <span class="total-bids">30 Bids</span>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#0" class="custom-button">Submit a bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-10 col-md-6 col-lg-4 art">
+                                    <div class="auction-item-2">
+                                        <div class="auction-thumb">
+                                            <a href="Tứ Dương Phương Tôn.html"><img
+                                                    src="../hình sản phẩm/Chén cổ Tứ Dương Phương Tôn.jpg"></a>
+                                            <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                            <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                        </div>
+                                        <div class="auction-content">
+                                            <h6 class="title">
+                                                <a href="#0">Chén cổ Tứ Dương Phương Tôn</a>
+                                            </h6>
+                                            <div class="bid-area">
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-auction"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Current Bid</div>
+                                                        <div class="amount">$876.00</div>
+                                                    </div>
+                                                </div>
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-money"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Buy Now</div>
+                                                        <div class="amount">$5,00.00</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="countdown-area">
+                                                <div class="countdown">
+                                                    <div id="bid_counter"></div>
+                                                </div>
+                                                <span class="total-bids">30 Bids</span>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#0" class="custom-button">Submit a bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-10 col-md-6 col-lg-4 art">
+                                    <div class="auction-item-2">
+                                        <div class="auction-thumb">
+                                            <a href="Hán Cung Xuân Hiểu Đồ .html"><img
+                                                    src="../hình sản phẩm/Hán cung xuân hiểu đồ.jpg"></a>
+                                            <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                            <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                        </div>
+                                        <div class="auction-content">
+                                            <h6 class="title">
+                                                <a href="#0"> Hán cung xuân hiểu đồ </a>
+                                            </h6>
+                                            <div class="bid-area">
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-auction"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Current Bid</div>
+                                                        <div class="amount">$876.00</div>
+                                                    </div>
+                                                </div>
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-money"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Buy Now</div>
+                                                        <div class="amount">$5,00.00</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="countdown-area">
+                                                <div class="countdown">
+                                                    <div id="bid_counter"></div>
+                                                </div>
+                                                <span class="total-bids">30 Bids</span>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#0" class="custom-button">Submit a bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-10 col-md-6 col-lg-4 antiques">
+                                    <div class="auction-item-2">
+                                        <div class="auction-thumb">
+                                            <a href="Hồng Sơn Ngọc Long.html"><img
+                                                    src="../hình sản phẩm/Hồng Sơn Ngọc Long.jpg"></a>
+                                            <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                            <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                        </div>
+                                        <div class="auction-content">
+                                            <h6 class="title">
+                                                <a href="#0">Hồng Sơn Ngọc Long</a>
+                                            </h6>
+                                            <div class="bid-area">
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-auction"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Current Bid</div>
+                                                        <div class="amount">$876.00</div>
+                                                    </div>
+                                                </div>
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-money"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Buy Now</div>
+                                                        <div class="amount">$5,00.00</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="countdown-area">
+                                                <div class="countdown">
+                                                    <div id="bid_counter"></div>
+                                                </div>
+                                                <span class="total-bids">30 Bids</span>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#0" class="custom-button">Submit a bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-10 col-md-6 col-lg-4 antiques">
+                                    <div class="auction-item-2">
+                                        <div class="auction-thumb">
+                                            <a href="Hội tụ quần hùng.html"><img
+                                                    src="../hình sản phẩm/Hội tụ quần hùng.jpg"></a>
+                                            <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                            <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                        </div>
+                                        <div class="auction-content">
+                                            <h6 class="title">
+                                                <a href="#0">Hội tụ quần hùng</a>
+                                            </h6>
+                                            <div class="bid-area">
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-auction"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Current Bid</div>
+                                                        <div class="amount">$876.00</div>
+                                                    </div>
+                                                </div>
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-money"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Buy Now</div>
+                                                        <div class="amount">$5,00.00</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="countdown-area">
+                                                <div class="countdown">
+                                                    <div id="bid_counter"></div>
+                                                </div>
+                                                <span class="total-bids">30 Bids</span>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#0" class="custom-button">Submit a bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-10 col-md-6 col-lg-4 collectibles">
+                                    <div class="auction-item-2">
+                                        <div class="auction-thumb">
+                                            <a href="Mã đạp phi yến.html"><img
+                                                    src="../hình sản phẩm/Mã đạp phi yến.jpg"></a>
+                                            <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                            <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                        </div>
+                                        <div class="auction-content">
+                                            <h6 class="title">
+                                                <a href="#0"> Mã đạp phi yến </a>
+                                            </h6>
+                                            <div class="bid-area">
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-auction"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Current Bid</div>
+                                                        <div class="amount">$876.00</div>
+                                                    </div>
+                                                </div>
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-money"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Buy Now</div>
+                                                        <div class="amount">$5,00.00</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="countdown-area">
+                                                <div class="countdown">
+                                                    <div id="bid_counter"></div>
+                                                </div>
+                                                <span class="total-bids">30 Bids</span>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#0" class="custom-button">Submit a bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-10 col-md-6 col-lg-4 furniture">
+                                    <div class="auction-item-2">
+                                        <div class="auction-thumb">
+                                            <a href="một chiếc bát của thời Minh.html"><img
+                                                    src="../hình sản phẩm/một chiếc bát của thời Minh 1.jpg"></a>
+                                            <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                            <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                        </div>
+                                        <div class="auction-content">
+                                            <h6 class="title">
+                                                <a href="#0">một chiếc bát của thời Minh</a>
+                                            </h6>
+                                            <div class="bid-area">
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-auction"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Current Bid</div>
+                                                        <div class="amount">$876.00</div>
+                                                    </div>
+                                                </div>
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-money"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Buy Now</div>
+                                                        <div class="amount">$5,00.00</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="countdown-area">
+                                                <div class="countdown">
+                                                    <div id="bid_counter"></div>
+                                                </div>
+                                                <span class="total-bids">30 Bids</span>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#0" class="custom-button">Submit a bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-10 col-md-6 col-lg-4 art">
+                                    <div class="auction-item-2">
+                                        <div class="auction-thumb">
+                                            <a href="Phú Xuân sơn cư đồ.html"><img
+                                                    src="../hình sản phẩm/Phú Xuân sơn cư đồ.jpg"></a>
+                                            <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                            <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                        </div>
+                                        <div class="auction-content">
+                                            <h6 class="title">
+                                                <a href="#0">Phú Xuân sơn cư đồ</a>
+                                            </h6>
+                                            <div class="bid-area">
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-auction"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Current Bid</div>
+                                                        <div class="amount">$876.00</div>
+                                                    </div>
+                                                </div>
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-money"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Buy Now</div>
+                                                        <div class="amount">$5,00.00</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="countdown-area">
+                                                <div class="countdown">
+                                                    <div id="bid_counter"></div>
+                                                </div>
+                                                <span class="total-bids">30 Bids</span>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#0" class="custom-button">Submit a bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-10 col-md-6 col-lg-4 art">
+                                    <div class="auction-item-2">
+                                        <div class="auction-thumb">
+                                            <a href="Thanh minh thượng hà đồ.html"><img
+                                                    src="../hình sản phẩm/Thanh minh thượng hà đồ.jpg"></a>
+                                            <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                            <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                        </div>
+                                        <div class="auction-content">
+                                            <h6 class="title">
+                                                <a href="#0"> Thanh minh thượng hà đồ</a>
+                                            </h6>
+                                            <div class="bid-area">
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-auction"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Current Bid</div>
+                                                        <div class="amount">$876.00</div>
+                                                    </div>
+                                                </div>
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-money"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Buy Now</div>
+                                                        <div class="amount">$5,00.00</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="countdown-area">
+                                                <div class="countdown">
+                                                    <div id="bid_counter"></div>
+                                                </div>
+                                                <span class="total-bids">30 Bids</span>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#0" class="custom-button">Submit a bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-10 col-md-6 col-lg-4 collectibles">
+                                    <div class="auction-item-2">
+                                        <div class="auction-thumb">
+                                            <a href="Thanh từ liên hoa tôn.html"><img
+                                                    src="../hình sản phẩm/Thanh từ liên hoa tôn.jpg"></a>
+                                            <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                            <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                        </div>
+                                        <div class="auction-content">
+                                            <h6 class="title">
+                                                <a href="#0">Thanh từ liên hoa tôn</a>
+                                            </h6>
+                                            <div class="bid-area">
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-auction"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Current Bid</div>
+                                                        <div class="amount">$876.00</div>
+                                                    </div>
+                                                </div>
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-money"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Buy Now</div>
+                                                        <div class="amount">$5,00.00</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="countdown-area">
+                                                <div class="countdown">
+                                                    <div id="bid_counter"></div>
+                                                </div>
+                                                <span class="total-bids">30 Bids</span>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#0" class="custom-button">Submit a bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-10 col-md-6 col-lg-4 furniture">
+                                    <div class="auction-item-2">
+                                        <div class="auction-thumb">
+                                            <a href="Thái hội quán ngư thạch phủ đồ đào hang.html"><img
+                                                    src="../hình sản phẩm/Thái hội quán ngư thạch phủ đồ đào hang.jpg"></a>
+                                            <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                            <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                        </div>
+                                        <div class="auction-content">
+                                            <h6 class="title">
+                                                <a href="#0">Thái hội quán ngư thạch phủ đồ đào hang</a>
+                                            </h6>
+                                            <div class="bid-area">
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-auction"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Current Bid</div>
+                                                        <div class="amount">$876.00</div>
+                                                    </div>
+                                                </div>
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-money"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Buy Now</div>
+                                                        <div class="amount">$5,00.00</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="countdown-area">
+                                                <div class="countdown">
+                                                    <div id="bid_counter"></div>
+                                                </div>
+                                                <span class="total-bids">30 Bids</span>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#0" class="custom-button">Submit a bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-10 col-md-6 col-lg-4 antiques">
+                                    <div class="auction-item-2">
+                                        <div class="auction-thumb">
+                                            <a href="Thái đào nhân diện ngư văn bồn.html"><img
+                                                    src="../hình sản phẩm/Thái đào nhân diện ngư văn bồn.jpg"></a>
+                                            <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                            <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                        </div>
+                                        <div class="auction-content">
+                                            <h6 class="title">
+                                                <a href="#0"> Thái đào nhân diện ngư văn bồn</a>
+                                            </h6>
+                                            <div class="bid-area">
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-auction"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Current Bid</div>
+                                                        <div class="amount">$876.00</div>
+                                                    </div>
+                                                </div>
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-money"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Buy Now</div>
+                                                        <div class="amount">$5,00.00</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="countdown-area">
+                                                <div class="countdown">
+                                                    <div id="bid_counter"></div>
+                                                </div>
+                                                <span class="total-bids">30 Bids</span>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#0" class="custom-button">Submit a bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-10 col-md-6 col-lg-4 collectibles">
+                                    <div class="auction-item-2">
+                                        <div class="auction-thumb">
+                                            <a href="Tù và Olyphant.html"><img
+                                                    src="../hình sản phẩm/Tù và Olyphant.jpg"></a>
+                                            <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                            <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                        </div>
+                                        <div class="auction-content">
+                                            <h6 class="title">
+                                                <a href="#0">Tù và Olyphant</a>
+                                            </h6>
+                                            <div class="bid-area">
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-auction"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Current Bid</div>
+                                                        <div class="amount">$876.00</div>
+                                                    </div>
+                                                </div>
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-money"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Buy Now</div>
+                                                        <div class="amount">$5,00.00</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="countdown-area">
+                                                <div class="countdown">
+                                                    <div id="bid_counter"></div>
+                                                </div>
+                                                <span class="total-bids">30 Bids</span>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#0" class="custom-button">Submit a bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-10 col-md-6 col-lg-4 antiques">
+                                    <div class="auction-item-2">
+                                        <div class="auction-thumb">
+                                            <a href="Tương kim thú thủ mã não bôi.html"><img
+                                                    src="../hình sản phẩm/Tương kim thú thủ mã não bôi.jpg"></a>
+                                            <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                            <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                        </div>
+                                        <div class="auction-content">
+                                            <h6 class="title">
+                                                <a href="#0">Tương kim thú thủ mã não bôi</a>
+                                            </h6>
+                                            <div class="bid-area">
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-auction"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Current Bid</div>
+                                                        <div class="amount">$876.00</div>
+                                                    </div>
+                                                </div>
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-money"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Buy Now</div>
+                                                        <div class="amount">$5,00.00</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="countdown-area">
+                                                <div class="countdown">
+                                                    <div id="bid_counter"></div>
+                                                </div>
+                                                <span class="total-bids">30 Bids</span>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#0" class="custom-button">Submit a bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-10 col-md-6 col-lg-4 furniture">
+                                    <div class="auction-item-2">
+                                        <div class="auction-thumb">
+                                            <a href="Tư mẫu mậu đỉnh.html"><img
+                                                    src="../hình sản phẩm/Đỉnh đồng Tư mẫu mậu đỉnh.jpg"></a>
+                                            <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                            <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                        </div>
+                                        <div class="auction-content">
+                                            <h6 class="title">
+                                                <a href="#0"> Đỉnh đồng Tư mẫu mậu đỉnh</a>
+                                            </h6>
+                                            <div class="bid-area">
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-auction"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Current Bid</div>
+                                                        <div class="amount">$876.00</div>
+                                                    </div>
+                                                </div>
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-money"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Buy Now</div>
+                                                        <div class="amount">$5,00.00</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="countdown-area">
+                                                <div class="countdown">
+                                                    <div id="bid_counter"></div>
+                                                </div>
+                                                <span class="total-bids">30 Bids</span>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#0" class="custom-button">Submit a bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-10 col-md-6 col-lg-4 art">
+                                    <div class="auction-item-2">
+                                        <div class="auction-thumb">
+                                            <a href="Bức Illustrated Folio.html"><img
+                                                    src="../hình sản phẩm/Bức Illustrated Folio.jpg"></a>
+                                            <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                            <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                        </div>
+                                        <div class="auction-content">
+                                            <h6 class="title">
+                                                <a href="#0"> Bức Illustrated Folio</a>
+                                            </h6>
+                                            <div class="bid-area">
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-auction"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Current Bid</div>
+                                                        <div class="amount">$876.00</div>
+                                                    </div>
+                                                </div>
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-money"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Buy Now</div>
+                                                        <div class="amount">$5,00.00</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="countdown-area">
+                                                <div class="countdown">
+                                                    <div id="bid_counter"></div>
+                                                </div>
+                                                <span class="total-bids">30 Bids</span>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#0" class="custom-button">Submit a bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-10 col-md-6 col-lg-4 furniture">
+                                    <div class="auction-item-2">
+                                        <div class="auction-thumb">
+                                            <a href="Tủ đựng rượu từ thế kỷ 18.html"><img
+                                                    src="../hình sản phẩm/Tủ đựng rượu từ thế kỷ 18.jpg"></a>
+                                            <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                            <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                        </div>
+                                        <div class="auction-content">
+                                            <h6 class="title">
+                                                <a href="#0"> Tủ đựng rượu từ thế kỷ 18</a>
+                                            </h6>
+                                            <div class="bid-area">
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-auction"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Current Bid</div>
+                                                        <div class="amount">$876.00</div>
+                                                    </div>
+                                                </div>
+                                                <div class="bid-amount">
+                                                    <div class="icon">
+                                                        <i class="flaticon-money"></i>
+                                                    </div>
+                                                    <div class="amount-content">
+                                                        <div class="current">Buy Now</div>
+                                                        <div class="amount">$5,00.00</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="countdown-area">
+                                                <div class="countdown">
+                                                    <div id="bid_counter"></div>
+                                                </div>
+                                                <span class="total-bids">30 Bids</span>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#0" class="custom-button">Submit a bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        <!-- mục sản phẩm kết thúc -->
+        <div class="footer-basic">
+        <footer>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Support</a></li>
+                <li class="list-inline-item"><a href="#">Site Map</a></li>
+                <li class="list-inline-item"><a href="#">Contact us</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Project Group 05</p>
+        </footer>
+    </div>
+</body>
+
+</html>

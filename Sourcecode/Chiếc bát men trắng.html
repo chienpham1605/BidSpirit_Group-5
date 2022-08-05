@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="ctrller.js"></script>
+    <title>Bid Spirit </title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="inner-header container">
+                <a href=""><img class="logo" src="image/icon.webp"></a>
+                <nav>
+                    <ul id="main-menu">
+                        <form action="" id="search-box">
+                            <input type="text" id="search-text">
+                            <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                        <li><a href="product.html">Products</a>
+                            <ul class="dropdown">
+                                <a href="">Fine Art</a>
+                                <a href="">Antiques</a>
+                                <a href="">Furniture</a>
+                                <a href="">Collectibles</a>
+                            </ul>
+                        </li>
+                        <li><a href="">Auctions</a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Gallery</a></li> 
+                        <li><a href="">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </div>
+    <div class="banner">
+    </div>
+    <section class="product-details padding-bottom mt--240 mt-lg--440">
+        <div class="container">
+            <div class="product-details-slider-top-wrapper">
+                <div class="product-details-slider owl-theme owl-carousel" id="sync1">
+                    <div class="slide-top-item">
+                        <div class="slide-inner">
+                            <img src="../hình sản phẩm/Chiếc bát men trắng 1.jpg" alt="product">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-40-60-80">
+                <div class="col-lg-8">
+                    <div class="product-details-content">
+                        <div class="product-details-header">
+                            <h2 class="title">Chiếc bát men trắng </h2>
+                            <ul>
+                                <li>Category: Furniture</li>
+                                <li>Item #: 7300-3356862</li>
+                                <li>Sponsor: Arthur </li>
+                            </ul>
+                        </div>
+                        <ul class="price-table mb-30">
+                            <li class="header">
+                                <h5 class="current">Current Price</h5>
+                                <h3 class="price">US $300.00</h3>
+                            </li>
+                            <li>
+                                <span class="details">Buyer's Premium</span>
+                                <h5 class="info">10.00%</h5>
+                            </li>
+                            <li>
+                                <span class="details">Bid Increment (US)</span>
+                                <h5 class="info">$50.00</h5>
+                            </li>
+                        </ul>
+                        <div class="product-bid-area">
+                            <form class="product-bid-form">
+                                <input type="text" placeholder="Enter you bid amount">
+                                <button type="submit" class="custom-button">Submit a bid</button>
+                            </form>
+                        </div>
+                        <div class="buy-now-area">
+                            <a href="#0" class="custom-button">Buy Now: $4,200</a>
+                            <a href="#0" class="rating custom-button active border"><i class="fas fa-star"></i> Add to
+                                Wishlist
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="product-sidebar-area">
+                        <div class="product-single-sidebar mb-3">
+                            <h6 class="title">This Auction Ends in:</h6>
+                            <div class="countdown">
+                                <div id="bid_counter1"></div>
+                            </div>
+                            <div class="side-counter-area">
+                                <div class="side-counter-item">
+                                    <div class="thumb">
+                                        <img src="../hình liên quan/số ng đấu giá.png" alt="product">
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="count-title"><span class="counter">61</span></h3>
+                                        <p>Active Bidders</p>
+                                    </div>
+                                </div>
+                                <div class="side-counter-item">
+                                    <div class="thumb">
+                                        <img src="../hình liên quan/số ng đang xem.png" alt="product">
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="count-title"><span class="counter">203</span></h3>
+                                        <p>Watching</p>
+                                    </div>
+                                </div>
+                                <div class="side-counter-item">
+                                    <div class="thumb">
+                                        <img src="../hình liên quan/tổng bid.png" alt="product">
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="count-title"><span class="counter">82</span></h3>
+                                        <p>Total Bids</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#0" class="cart-link">View Shipping, Payment & Auction Policies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-tab-menu-area mb-40-60 mt-70-100">
+            <div class="container">
+                <ul class="product-tab-menu nav nav-tabs">
+                    <li>
+                        <a href="#details" class="active" data-toggle="tab">
+                            <div class="thumb">
+                                <img src="../hình liên quan/des.png" alt="product">
+                            </div>
+                            <div class="content">Description</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#delevery" data-toggle="tab">
+                            <div class="thumb">
+                                <img src="../hình liên quan/delivery.png" alt="product">
+                            </div>
+                            <div class="content">Delivery Options</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#history" data-toggle="tab">
+                            <div class="thumb">
+                                <img src="../hình liên quan/bid his.png" alt="product">
+                            </div>
+                            <div class="content">Bid History (36)</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#questions" data-toggle="tab">
+                            <div class="thumb">
+                                <img src="../hình liên quan/FAQ.png" alt="product">
+                            </div>
+                            <div class="content">Questions </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="details">
+                    <div class="tab-details-content">
+                        <div class="header-area">
+                            <h3 class="title">Chiếc bát men trắng</h3>
+                            <div class="item">
+                                <table class="product-info-table">
+                                    <tbody>
+                                        <tr>
+                                            <th>tình trạng</th>
+                                            <td>nguyên vẹn</td>
+                                        </tr>
+                                        <tr>
+                                            <th>niên đại</th>
+                                            <td>500 năm trước công nguyên</td>
+                                        </tr>
+                                        <tr>
+                                            <th>kích thước</th>
+                                            <td>... cm x ... cm</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="item">
+                                <h5 class="subtitle"> Chiếc bát men trắng </h5>
+                                <p>Chiếc bát men trắng, thấu quang tìm thấy ở khu di tích Hoàng thành Thăng Long năm
+                                    2003 là chiếc bát hiếm hoi còn nguyên vẹn nhất trong tất cả các loại đồ gốm ngự dụng
+                                    thời Lê sơ đào được tại khu di tích Hoàng thành Thăng Long. Đây cũng là chiếc bát
+                                    đặc sắc duy nhất có được và là đồ sứ đặc sắc nhất, cao cấp nhất và điển hình nhất
+                                    trong số những sưu tập đồ sứ ngự dụng tìm thấy tại khu di tích Hoàng thành Thăng
+                                    Long.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade show" id="delevery">
+                    <div class="shipping-wrapper">
+                        <div class="item">
+                            <h5 class="title">shipping</h5>
+                            <div class="table-wrapper">
+                                <table class="shipping-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Available delivery methods </th>
+                                            <th>Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Customer Pick-up (within 10 days)</td>
+                                            <td>$0.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Standard Shipping (5-7 business days)</td>
+                                            <td>Not Applicable</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Expedited Shipping (2-4 business days)</td>
+                                            <td>Not Applicable</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h5 class="title">Notes</h5>
+                            <p>Please carefully review our shipping and returns policy before committing to a bid.
+                                From time to time, and at its sole discretion, Sbidu may change the prevailing fee
+                                structure for shipping and handling.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade show" id="history">
+                    <div class="history-wrapper">
+                        <div class="item">
+                            <h5 class="title">Bid History</h5>
+                            <div class="history-table-area">
+                                <table class="history-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Bidder</th>
+                                            <th>date</th>
+                                            <th>time</th>
+                                            <th>unit price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-history="bidder">
+                                                <div class="user-info">
+                                                    <div class="thumb">
+                                                        <img src="../hình liên quan/gai1.png" alt="history">
+                                                    </div>
+                                                    <div class="content">
+                                                        Lily
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td data-history="date">06/16/2021</td>
+                                            <td data-history="time">02:45:25 PM</td>
+                                            <td data-history="unit price">$900.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-history="bidder">
+                                                <div class="user-info">
+                                                    <div class="thumb">
+                                                        <img src="../hình liên quan/moses watts.png" alt="history">
+                                                    </div>
+                                                    <div class="content">
+                                                        Louis
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td data-history="date">06/16/2021</td>
+                                            <td data-history="time">02:45:25 PM</td>
+                                            <td data-history="unit price">$900.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-history="bidder">
+                                                <div class="user-info">
+                                                    <div class="thumb">
+                                                        <img src="../hình liên quan/taaai.png" alt="history">
+                                                    </div>
+                                                    <div class="content">
+                                                        Jack Rodgers
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td data-history="date">06/17/2022</td>
+                                            <td data-history="time">02:45:25 PM</td>
+                                            <td data-history="unit price">$900.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-history="bidder">
+                                                <div class="user-info">
+                                                    <div class="thumb">
+                                                        <img src="../hình liên quan/gái.png" alt="history">
+                                                    </div>
+                                                    <div class="content">
+                                                        Jade
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td data-history="date">07/14/2022</td>
+                                            <td data-history="time">02:45:25 PM</td>
+                                            <td data-history="unit price">$900.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-history="bidder">
+                                                <div class="user-info">
+                                                    <div class="thumb">
+                                                        <img src="../hình liên quan/trai.png" alt="history">
+                                                    </div>
+                                                    <div class="content">
+                                                        Leon
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td data-history="date">05/17/2022</td>
+                                            <td data-history="time">02:45:25 PM</td>
+                                            <td data-history="unit price">$900.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="text-center mb-3 mt-4">
+                                    <a href="#0" class="button-3">Load More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade show" id="questions">
+                    <h5 class="faq-head-title">Frequently Asked Questions</h5>
+                    <div class="faq-wrapper">
+                        <div class="faq-item">
+                            <div class="faq-title">
+                                <img src="../hình liên quan/FAQ 1.png" alt="css"><span class="title">How to start
+                                    bidding?</span><span class="right-icon"></span>
+                            </div>
+                            <div class="faq-content">
+                                <p>All successful bidders can confirm their winning bid by checking the “Sbidu”. In
+                                    addition, all successful bidders will receive an email notifying them of their
+                                    winning bid after the auction closes.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-title">
+                                <img src="../hình liên quan/FAQ 1.png" alt="css"><span class="title">Security Deposit /
+                                    Bidding Power </span><span class="right-icon"></span>
+                            </div>
+                            <div class="faq-content">
+                                <p>All successful bidders can confirm their winning bid by checking the “Sbidu”. In
+                                    addition, all successful bidders will receive an email notifying them of their
+                                    winning bid after the auction closes.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-title">
+                                <img src="../hình liên quan/FAQ 1.png" alt="css"><span class="title">Delivery time to
+                                    the
+                                    destination port </span><span class="right-icon"></span>
+                            </div>
+                            <div class="faq-content">
+                                <p>All successful bidders can confirm their winning bid by checking the “Sbidu”. In
+                                    addition, all successful bidders will receive an email notifying them of their
+                                    winning bid after the auction closes.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-title">
+                                <img src="../hình liên quan/FAQ 1.png" alt="css"><span class="title">How to register to
+                                    bid
+                                    in an auction?</span><span class="right-icon"></span>
+                            </div>
+                            <div class="faq-content">
+                                <p>All successful bidders can confirm their winning bid by checking the “Sbidu”. In
+                                    addition, all successful bidders will receive an email notifying them of their
+                                    winning bid after the auction closes.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item open active">
+                            <div class="faq-title">
+                                <img src="../hình liên quan/FAQ 1.png" alt="css"><span class="title">How will I know if
+                                    my
+                                    bid was successful?</span><span class="right-icon"></span>
+                            </div>
+                            <div class="faq-content">
+                                <p>All successful bidders can confirm their winning bid by checking the “Sbidu”. In
+                                    addition, all successful bidders will receive an email notifying them of their
+                                    winning bid after the auction closes.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-title">
+                                <img src="../hình liên quan/FAQ 1.png" alt="css"><span class="title">What happens if I
+                                    bid on
+                                    the wrong lot?</span><span class="right-icon"></span>
+                            </div>
+                            <div class="faq-content">
+                                <p>All successful bidders can confirm their winning bid by checking the “Sbidu”. In
+                                    addition, all successful bidders will receive an email notifying them of their
+                                    winning bid after the auction closes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <div class="footer-basic">
+        <footer>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Support</a></li>
+                <li class="list-inline-item"><a href="#">Site Map</a></li>
+                <li class="list-inline-item"><a href="#">Contact us</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Project Group 05</p>
+        </footer>
+    </div>
+</body>
+
+</html>
