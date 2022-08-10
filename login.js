@@ -29,9 +29,6 @@ function validation() {
     if (secondName.trim() === "") {
         errMessage += "Second name is required !\n";
     }
-    if (fullName.trim() === "") {
-        errMessage += "Name is required !\n";
-    }
     if (email.trim() === "" || regEmail.test(email.trim()) === false) {
         errMessage += "Email is required and format xxx@xxx.xxx !\n";
     }
