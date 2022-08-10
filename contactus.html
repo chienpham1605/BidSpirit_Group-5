@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:200,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="https://use.fontawesome.com/20ab91acc4.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="style.css">
+  <script src="ctrller.js"></script>
+  <script src="contact.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="inner-header container">
+      <a href="home.html"><img class="logo" src="image/icon.webp"></a>
+      <nav>
+        <ul id="main-menu">
+          <form action="" id="search-box">
+            <input type="text" id="search-text">
+            <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+          <li><a href="product.html">Products</a>
+            <ul class="dropdown">
+              <a href="">Fine Art</a>
+              <a href="">Antiques</a>
+              <a href="">Furniture</a>
+              <a href="">Collectibles</a>
+            </ul>
+          </li>
+          <li><a href="auction.html">Auctions</a></li>
+          <li><a href="">About us</a></li>
+          <li><a href="">Gallery</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+    </div>
+  </header>
+  <div class="banner"></div>
+  <section id="contact">
+    <h1 class="section-header">Contact us</h1>
+    <h4> Please send your feedback so that we can improve our services better </h4>
+    <div class="contact-wrapper">
+      <form id="contact-form" class="form-horizontal" role="form">
+        <div class="form-group">
+          <div class="col-sm-12">
+            <input type="text" class="form-control" id="fullName" placeholder="NAME">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-sm-12">
+            <input type="email" class="form-control" id="email" placeholder="EMAIL">
+          </div>
+        </div>
+
+        <textarea class="form-control" rows="10" id="comment" placeholder="MESSAGE" name="message"></textarea>
+
+        <button class="btn btn-primary send-button" id="cfm" type="button" value="SEND" onclick="displayInfoContact()">
+
+        </button>
+
+      </form>
+
+      <div class="direct-contact-container">
+        <ul class="contact-list">
+          <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place"><iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.5527694278367!2d34.8018503!3d32.081343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4bb93323dc23%3A0xd2e7d0bc4684be06!2sbidspirit!5e0!3m2!1svi!2s!4v1660115112703!5m2!1svi!2s"
+                  width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe></span></i></li>
+          <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a
+                  href="tel:+972733744453" title="Give me a call">+972733744453</a></span></i></li>
+        </ul>
+
+        <hr>
+        <ul class="social-media-list">
+          <li><a href="#" target="_blank" class="contact-icon">
+              <i class="fa fa-github"></i></a>
+          </li>
+          <li><a href="#" target="_blank" class="contact-icon">
+              <i class="fa fa-facebook"></i></a>
+          </li>
+        </ul>
+        <hr>
+
+        <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED-Group 5</div>
+
+      </div>
+
+    </div>
+
+  </section>
+</body>
+
+</html>
