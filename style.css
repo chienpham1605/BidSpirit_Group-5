@@ -1793,7 +1793,9 @@ hr {
   padding: 70px 50px ;
   z-index: 0;
 }
-
+.website-counter{
+  color: red;
+}
 
 .fl{
 	float: left;
