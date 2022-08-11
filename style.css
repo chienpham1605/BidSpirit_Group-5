@@ -1759,10 +1759,7 @@ hr {
 }
 
 /*Login*/
-.login {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-}
+
 
 #myBtn {
   display: none;
@@ -1784,18 +1781,18 @@ hr {
   background-color: #555;
 }
 .signin{
-	padding: 150px;
+  width: 350px;
+	height: 350px;
+	padding-bottom: 15px;
 	position: absolute;
-	top:60%;
+	top:40%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	margin: auto;
-  padding: 70px 50px ;
+  padding: 30px 40px ;
   z-index: 0;
 }
-.website-counter{
-  color: red;
-}
+
 
 .fl{
 	float: left;
