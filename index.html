@@ -18,20 +18,37 @@
     <title>Bid Spirit </title>
     <script src="ctrller.js"></script>
 </head>
+<script>
+    var counterContainer = document.querySelector(".website-counter");
+    var resetButton = document.querySelector("#reset");
+    var visitCount = localStorage.getItem("page_view");
 
+    // Check if page_view entry is present
+    if (visitCount) {
+      visitCount = Number(visitCount) + 1;
+      localStorage.setItem("page_view", visitCount);
+    } else {
+      visitCount = 1;
+      localStorage.setItem("page_view", 1);
+    }
+    counterContainer.innerHTML = visitCount;
+</script>
 <body>
     <div id="wrapper">
         <header>
             <div class="inner-header container">
-                <a href="home.html"><img class="logo" src="image/icon.webp"></a>
+                <div>
+                <div>Website visit count:</div>
                 <div class="website-counter"></div>
+                </div>
+                <a href="home.html"><img class="logo" src="image/icon.webp"></a>
+                
                 <nav>
                     <ul id="main-menu">
                         <form action="" id="search-box">
                             <input type="text" id="search-text">
                             <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
                         </form>
-                        
                         <li><a href="product.html">Products</a>
                             <ul class="dropdown">
                                 <a href="">Fine Art</a>
@@ -43,8 +60,9 @@
                         <li><a href="auction.html">Auctions</a></li>
                         <li><a href="">About us</a></li>
                         <li><a href="">Gallery</a></li>
-                        <li><a href="login.html">Login</a></li>
+                        <li><a href="login.html">Login</a></li> 
                     </ul>
+                   
                 </nav>
 
             </div>
