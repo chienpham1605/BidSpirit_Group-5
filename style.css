@@ -2,24 +2,16 @@
   padding: 0%;
   margin: 0%;
 }
-.website-counter {
+ 
+#here{
+  padding: 15px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-
 /* Styles for website counter container */
-.website-counter {
-  background-color: #ff4957;
-  height: 50px;
-  width: 80px;
-  color: white;
-  border-radius: 30px;
-  font-weight: 700;
-  font-size: 25px;
-  margin-top: 10px;
-}
+
 .featured-auction-section {
   text-align: center;
 }
@@ -1867,3 +1859,94 @@ hr {
   text-transform: uppercase;
   cursor: pointer;
 }
+
+.section-title1 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title1 h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #0f394c;
+}
+
+.section-title1 p {
+  margin-bottom: 0;
+}
+.about-bg{
+  background-color: #FAD7A0;
+  color:rgb(0, 0, 0);
+  border-radius: 5%;
+  
+}
+.about .point-boxes h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f394c;
+  margin-bottom: 15px;
+}
+
+.about .point-box {
+  margin-top: 40px;
+}
+
+.about .point-box .icon {
+  float: center;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+
+.about .point-box .icon i {
+  color: #49b5e7;
+  font-size: 32px;
+}
+
+.about .point-box:hover .icon {
+  background: #e77849;
+  border-color: #e74949;
+}
+
+.about .point-box:hover .icon i {
+  color: #fff;
+}
+
+.about .point-box .title1 {
+  margin-left: 85px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.about .point-box .title1 a {
+  color: #343a40;
+  transition: 0.3s;
+}
+
+.about .point-box .title1 a:hover {
+  color: #49b5e7;
+}
+
+.about .point-box .description {
+  margin-left: 85px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+
+
+@media (min-width: 1200px) {
+  .about .video-box {
+    margin-left: 15px;
+    margin-right: -15px;
+  }
+}
+

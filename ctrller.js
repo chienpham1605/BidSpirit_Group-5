@@ -28,7 +28,7 @@ var x = setInterval(function () {
 }, 1000);
 
 // Countdown Product
-var countDownDate = new Date("Aug 15, 2022 00:00:00").getTime();
+var countDownDate = new Date("Aug 25, 2022 00:00:00").getTime();
 var x = setInterval(function () {
 
 
@@ -145,21 +145,4 @@ var searchFilter = () => {
     }
   }
 }
-// Count Web //
-var counterContainer = document.querySelector(".website-counter");
-var resetButton = document.querySelector("#reset");
-var visitCount = localStorage.getItem("page_view");
 
-// Check if page_view entry is present
-if (visitCount) {
-  visitCount = Number(visitCount) + 1;
-  localStorage.setItem("page_view", visitCount);
-} else {
-  visitCount = 1;
-  localStorage.setItem("page_view", 1);
-}
-counterContainer.innerHTML =
-  " Visitors: " + visitCount;
-
-// website count
-    

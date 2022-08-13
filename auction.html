@@ -15,6 +15,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -23,6 +24,7 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <script src="ctrller.js"></script>
+    <script src="search.js"></script>
     <title>Auctions</title>
 </head>
 
@@ -46,8 +48,8 @@
                         </ul>
                     </li>
                     <li><a href="auction.html">Auctions</a></li>
-                    <li><a href="">About us</a></li>
-                    <li><a href="">Gallery</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+ 
                     <li><a href="login.html">Login</a></li>
                 </ul>
             </nav>
@@ -89,10 +91,10 @@
                     </select>
                 </div>
                 <form class="product-search ml-auto">
-                    <input type="text" onkeyup="searchFilter()" class="form-control" placeholder="Item Name">
+                    <input type="text" onkeyup="searchItems()" class="form-control" placeholder="Item Name">
                 </form>
             </div>
-            <div class="row mb-30-none justify-content-center">
+            <div class="list row mb-30-none justify-content-center">
                 <div id="upcoming" class="row">
                     <div class="col upcoming1">
                         <div class="auction-item-2">

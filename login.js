@@ -54,5 +54,6 @@ function displayInfo() {
         alert(errMessage);
         return;
     }
-    alert("Successfully!");
+    alert("Welcome,"+ firstName);
+    document.getElementById("here").innerHTML = "Welcome," + firstName;
 }
